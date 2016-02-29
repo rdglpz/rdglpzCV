@@ -1,9 +1,18 @@
-\documentclass[10pt]{article}
+\documentclass[7pt]{article}
 \usepackage[utf8]{inputenc}
 
 % This is a helpful package that puts math inside length specifications
+\usepackage{multirow}
+\usepackage{url}
 \usepackage{calc}
-\usepackage[spanish]{babel}
+\usepackage[spanish, es-tabla]{babel}
+\usepackage{graphicx}
+\usepackage{xcoffins}
+\usepackage{array}
+\usepackage{multicol}
+\usepackage{multirow}
+%\usepackage[latin1]{inputenc}
+
 
 % Layout: Puts the section titles on left side of page
 \reversemarginpar
@@ -153,33 +162,22 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%% Begin CV Document %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
+\newcolumntype{P}[1]{>{\hfill\arraybackslash}p{#1}}
+
 \begin{document}
-\makeheading{Dr. Rodrigo L\'{o}pez Far\'{i}as (Updated: \textit{23/Feb/2016} )}  
+\small{
+\makeheading{Dr. Rodrigo L\'{o}pez Far\'{i}as (Last update. \textit{29 / Feb / 2016} )}  
 
-\section{Personal Information}
-
-%
-% NOTE: Mind where the & separators and \\ breaks are in the following
-%       table.
-%
-% ALSO: \rcollength is the width of the right column of the table 
-%       (adjust it to your liking; default is 1.85in).
-%
-\newlength{\rcollength}\setlength{\rcollength}{2.7in}%
+\section{Personal Information} %\newlength{\rcollength}\setlength{\rcollength}{2.3in}%
 %
 %+393204884472
-\begin{tabular}[t]{@{}p{\textwidth-\rcollength}p{\rcollength}}
-%{Fecha de nacimiento: 8 de Julio 1984} 		& 	\textit{M\'{o}vil (Espa\~na)}: +34654436881\\
-{Birthday: 8/Jul/1984} 		& \textit{e-mail:} rodrigo.lopez@alumni.imtlucca.it	\\
-%{Domicilio: Enten\c{c}a \# 96}                  	& \textit{Tel\'{e}fono fijo (Espa\~na):} 935137953	\\
-{Address: Aramen \# 313}                  	& \textit{Cell:} +52 4431555416\\
-Zip Code: 58070           			& \textit{Skype Id:} rdglpz	\\
-Morelia, Mexico         			& 	
+\begin{tabular}{l P{70mm} M{20mm}}
+{Birthday: 8 / Jul / 1984} 		& 		 	Cellular: +52 4431555416					& \multirow{4}{*}[1.3cm]{\includegraphics[width=2.4cm]{foto.png}  } 	\\
+{Address: Aram\'{e}n \# 313}	&     	  	\textit{e-mail:} rodrigo.lopez@alumni.imtlucca.it 	&	\\
+CP: 58070           			& 			\textit{Skype ID:} rdglpz					&	\\
+Morelia, Mexico         		&		 												&
 \end{tabular}
-
-
-
-
 
 
 \section{Interests \& Skills  } \textbf{Programming Lenguages} 
@@ -198,60 +196,68 @@ Matlab, MATHEMATICA, R, Java, C/C++, PHP, HTML, MySQL, Python, LISP.
  
 \textbf{Languages} 
 
-English: 550 TOEFL points. Italian: B1 Common CEFRL Level
+English: 550 TOEFL points. Italian: B1 Common CEFRL Level 
 
 
 
 
-\section{Academic Degree}
- \subsection{Studies}
- 
- {\textbf{PhD in Computer Science and Engineering} (with European Doctorate mention)}. Lucca, Toscana, Italy. (February 2012 - January 2016)
-	\begin{outerlist}
+\section{Academic Degree} {\textbf{PhD in Computer Science and Engineering }}(W. European Doctor Mention). Lucca, Italy. (February 2012 - January 2016)
 
-	\item[] {\textbf{IMT Institute of Advanced Studies Lucca}}.
-	\item[] Thesis: Time Series Forecasting Based on Classification of Dynamic Patterns.
-        \begin{innerlist}
-        	\item Advisors:
-                   {Dr. Alberto Bemporad, Dr. Pantelis Sopasakis.}
+\blankline
+
+\textbf{Institute of Advanced Studies Lucca}
+
+		\begin{outerlist}
+			\item Thesis: Time Series Forecasting Based on Classification of Dynamic Patterns.
+			 \begin{innerlist}
+                 \item  {Advisors: Dr. Alberto Bemporad. Dr. Pantelis Sopasakis}
         	\item Study field: Time series analysis.
-        \end{innerlist}
-\end{outerlist}
-		
-\blankline
-		
-	{\textbf{MSc in Electrical Engineering (Option: Computational Systems)}}. Morelia, Michoacan Mexico. (March 2008 - August 2010)
-	
-		
-	\begin{outerlist}
-	\item[] {\textbf{Universidad Michoacana de San Nicolas de Hidalgo}}.
-
-        	\item [] Thesis: Bifurcation Diagrams for Discontinuous or Nondifferentiable Equations.
-	    \begin{innerlist}
-                 \item  {Advisors: Dr. Juan Jose Flores Romero, Dr. Claudio Fuerte Esquivel.}
-        	\item Related research topics: Evolutionary computing, nonlinear dynamical systems, stability analysis and optimization.
 	    \end{innerlist}
-        \end{outerlist}
+		\end{outerlist}
+		
+\blankline
 
+		{\textbf{MSc in Electrical Engineering (Branch: Computational Systems)}}. \textit{Morelia, Mexico. ( March 2008 - August 2010)}
+		
+		\blankline
+		
+	\textbf{Univesidad Michoacana de San Nicolas de Hidalgo}
+	
+	\blankline
+	\begin{outerlist}
+	
+        	\item Thesis: Bifurcation Diagrams for Discontinuous or Non-differentiable Equations.
+	    \begin{innerlist}
+                 \item  {Advisors: Dr. Juan Jose Flores Romero, Dr. Claudio Fuerte E.}
+        	\item Keywords: Evolutionary computing, nonlinear dynamical systems, stability analysis and optimization.
+	    \end{innerlist}
+\end{outerlist}
+
+%
 
 \blankline
-	
 
-{\textbf{Engineer in Computational Systems}}. - Morelia, Michoacan Mexico.(August 2002 - December 2007)
+
+{\textbf{Engineer in Computational Systems}}. 
+\textit{Morelia, Mexico (2002-2007)}
+\blankline
+
+\blankline
+
+\textbf{Instituto Tecnologico de Morelia}
+
+
+
 \begin{outerlist}
 
-\item[] {\textbf{Instituto Tecnologico de Morelia}}.
-
-\item Thesis Project: Implementation and performance analysis of \textbf{``Linux Terminal Server Project"} for educational purposes.
+\item[] {Computational Systems Engineer (specialization: networking and distributed systems)}.
 \end{outerlist}
 %
 
-\section{Academic Experience}
-\subsection{Courses Taught}
 
 
 
-{\textbf{Instituto Tecnol\'{o}gico de Morelia}}.
+\section{Academic Experience}  {\textbf{Instituto Tecnol\'{o}gico de Morelia}}.
 Morelia, Mexico.
 
 \begin{outerlist}
@@ -262,18 +268,18 @@ Morelia, Mexico.
 
 \hfill \textbf{August 2011 - January 2012}
 \begin{innerlist}
-\item Professor of: Structured and Object Oriented Computer programming (In Electronic and  Industrial Engineering), Research Methodology (In Computational Systems Engineering).  
+\item Structured and Object Oriented Computer programming (In Electronic and  Industrial Engineering), Research Methodology (In Computational Systems Engineering).  
 \end{innerlist}
 
 \hfill \textbf{January 2011 - July 2011}
 	\begin{innerlist}
 		%\item Professor of: Database Fundamentals (Computational Systems Engineering), Structures and organization of Data (�Technology Information Engineering) and Evaluation of Software Projects (Informatics).  
-		\item Professor of:  Database Fundamentals (Computational Systems Engineering), Structures and organization of data. (Technology Information Engineering) and Evaluation of software projects.
+		\item Database Fundamentals (Computational Systems Engineering), Structures and organization of data. (Technology Information Engineering) and Evaluation of software projects.
 		\end{innerlist}
 		
 		\hfill \textbf{August 2010 - December 2010}
 	\begin{innerlist}
-		\item Professor of : Operative systems, selected topics of programming and research fundamentals.
+		\item  Operative systems, selected topics of programming and research fundamentals.
 	\end{innerlist}
 %	\hfill \textbf{August 2011 - December 2011}
 	%\begin{innerlist}
@@ -294,12 +300,14 @@ Morelia, Mexico.
 Morelia, Mexico.
 \begin{outerlist}
 
-\item[] \textit{Teaching}%
-        \hfill \textbf{August 2009 - December 2009}
-\begin{innerlist}
-\item Web programming with PHP
+\item[] 
+\textit{Teaching}%
+\hfill \textbf{August 2009 - December 2009}
 
+\begin{innerlist}
+	\item Web programming with PHP
 \end{innerlist}
+
 \end{outerlist}
 
 
@@ -308,20 +316,20 @@ Morelia, Mexico.
 \blankline
 
 \section{Professional Experience}
-\subsection{Participation in Research Projects}
-{\textbf{State Center for Information and Communications Technologies (CETIC)}}.
+%\subsection{Participation in Research Projects}
+\textbf{State Center for Information and Communications Technologies (CETIC)}.
 Morelia, Mexico.
 
 \begin{outerlist}
 \item[] \textit{Resident in physical infrastructure}%
         \hfill \textbf{March 2007 - June 2007}
 \begin{innerlist}
-\item Performance analysis of \textbf{Linux Terminal Server Project}
+\item Performance analysis of \textbf{Linux Terminal Server Project} applied to to basic education.
 %\item Implementación para análisis de rendimiento y alcances de `\textbf{Linux Terminal Server Project}`.
 
 \end{innerlist}
-
 \end{outerlist}
+\blankline
 
 {\textbf{Instituto Tecnologico de Morelia}}.
 Morelia, Mexico.
@@ -330,7 +338,7 @@ Morelia, Mexico.
 \item[] \textit{Social Service Project}%
         \hfill \textbf{February 2007}
 \begin{innerlist}
-\item Develop of a web catalog for Social Service.
+\item Develop of a PHP Web catalog for Social Service.
 %\item Elaboración de un catálogo electrónico web para el Servicio Social.
 
 \end{innerlist}
@@ -340,7 +348,7 @@ Morelia, Mexico.
 \item[] \textit{IMPULSA}%
         \hfill \textbf{May 2005}
 \begin{innerlist}
-\item Program encourages young entrepreneurs IMPULSA.
+\item Young entrepreneurs program: IMPULSA.
 %\item Programa de Jóvenes emprendedores IMPULSA como Director de Finanzas.
 \end{innerlist}
 
@@ -348,14 +356,30 @@ Morelia, Mexico.
 
 \blankline
 
-\section{Publications}
-\subsection{Peer Reviewed Conference Articles}
+\section{Publications} \textbf{Journal Articles}
+\blankline
+
+%\subsection{Journal Articles Sent}
+\begin{innerlist}
+\item \textit{Hector Rodriguez Rangel, Vicenc Puig,Rodrigo L\'{o}pez Far\'{i}as, Juan J. Flores }  Short Term Demand Forecast using Bank of Neural Network Models Trained using Genetic Algorithms for the Optimal Management of Drinking Water Networks.  \textit{Engineering Applications of Artificial Intelligence}. \textit{Under review}.
+\end{innerlist}
+
+
+\blankline
+
+
+
+\textbf{Peer Reviewed Accepted Conference Articles}
+
+
+
+
 \begin{innerlist}
 
-\item \textit{Rodrigo L\'{o}pez Far\'{i}as, Juan J. Flores and Vicenc Puig}  Qualitative and Quantitative Multi-Model Forecasting with Nonlinear Noise Filter Applied to Water Demand \textit{IEEE Autumn Meeting on Power, Electronics and Computing} \textbf{Ixtapa M\'{e}xico, November 2015 }.
+\item \textit{Rodrigo L\'{o}pez Far\'{i}as, Juan J. Flores and Vicenc Puig}.  Qualitative and Quantitative Multi-Model Forecasting with Nonlinear Noise Filter Applied to Water Demand \textit{IEEE Autumn Meeting on Power, Electronics and Computing} \textbf{Ixtapa M\'{e}xico, November 2015 }.
 
 
-\item \textit{Juan J. Flores, Jose Ortiz Bejar, Jose Rafael Cedeno, Carlos Lara-Alvarez and Rodrigo L\'{o}pez Far\'{i}as} FNN a Fuzzy Version of the Nearest Neighbor Time Series Forecasting Technique \textit{IEEE Autumn Meeting on Power, Electronics and Computing} \textbf{Ixtapa M\'{e}xico, November 2015 }.
+\item \textit{Juan J. Flores, Jose Ortiz Bejar, Jose Rafael Cedeno, Carlos Lara-Alvarez and Rodrigo L\'{o}pez Far\'{i}as} FNN a Fuzzy Version of the Nearest Neighbour Time Series Forecasting Technique \textit{IEEE Autumn Meeting on Power, Electronics and Computing} \textbf{Ixtapa M\'{e}xico, November 2015 }.
 
 
 \item \textit{Rodrigo L\'{o}pea Far\'{i}as, Vicenc Puig}   A Multiple-Model Predictor Approach Based on an On-Line Mode Recognition with Application to Water Demand Forecasting \textit{International work-conference on Time Series 1 
@@ -364,9 +388,9 @@ Morelia, Mexico.
 \item \textit{Rodrigo. L\'{o}pez, V. Puig, H. Rodriguez}   An implementation of a multi-model predictor based on the qualitative and quantitative decomposition of the time-series \textit{International work-conference on Time Series 1 
 } \textbf{Granada Espa\~na, July 2015}.
 
-\item \textit{Dr, Juan Flores, Rodrigo López, Julio Barrera.} Optimization with gravitational Interactions  \textit{ROPEC XIII: Autumn Meeting of Electic power systems, electronic and computation (Reuni\'{o}n de Oto\~no de Potencia, Electr\'{o}inca y Computaci\'{o}n)} \textbf{Morelia M\'{e}xico, Noviembre 2011}.
+\item \textit{Dr, Juan Flores, Rodrigo López, Julio Barrera.} Optimization with gravitational Interactions  \textit{ROPEC XIII: Autumn Meeting of Electric power systems, electronic and computation (Reuni\'{o}n de Oto\~no de Potencia, Electr\'{o}inca y Computaci\'{o}n)} \textbf{Morelia M\'{e}xico, Noviembre 2011}.
 
-\item Juan Flores, Rodrigo Lopez, Julio Barrera. Gravitational Interactions Optimization. In \textit{Learning and Intelligent OptimizatioN}  (LION 5) \textbf{Roma, Italy - January 2010}.
+\item Juan Flores, Rodrigo Lopez, Julio Barrera. Gravitational Interactions Optimization. In \textit{Learning and Intelligent OptimizatioN}  (LION 5) \textbf{Roma, Italy - January 2011}.
 
 \item Juan J. Flores, Rodrigo Lopez and Julio Barrera. Particle swarm optimization with gravitational interactions for multimodal and unimodal problems. In \textit{Proceedings of the 9th Mexican International Conference on Artificial Intelligence (MICAI 2010)}, pages 361–370. Springer-Verlag. \textbf{Pachuca, México. November 2010.}
 
@@ -375,34 +399,31 @@ Morelia, Mexico.
 
 
 
-\section{Conferences}
-
-\begin{innerlist}
+\section{Conferences, Seminars \& Workshops } \textbf{Given} \begin{innerlist}
  %\item Learning and Intelligent OptimizatioN - 'Gravitational Interactions Optimization'. (Rome, Italy. January 2011)
- \item Invited to the 10 Congreso Estatal de Ciencia, Tecnolog\'{i}a e Innovaci\'{o}n, en la Mesa 2.- Ciencias de la Ingenier\'{i}a y Tecnolog\'{i}a, modalidad
+ \item 10mo Congreso Estatal de Ciencia, Tecnolog\'{i}a e Innovaci\'{o}n, en  Ciencias de la Ingenier\'{i}a y Tecnolog\'{i}a. PSO con Nichos Interactivos y B\'{u}squedas locales con Quasi-Newton  (Morelia, México. September 2015 )
  \item Activities of X Anniversary of the Instituto Tecnológico Superior de Ciudad Hidalgo -'Evolutionary computing applied to dynamical systems'.(Morelia, México. October 2010).
 \item Week of Research Projects FIE of the UMSNH - 'Gravitational Interactions Optimization'(Morelia, México. June 2010 ).
 \item Week of Research Projects FIE of the UMSNH - 'Bifurcations Diagrams using Artificial Intelligence Tools'(Morelia, México. June 2009).
 \end{innerlist}
 
 
+
+}
+
 \blankline
 
-
-\subsection{Courses, Workshops or Seminars Taken}
+\textbf{Attended}
 \begin{innerlist}
-\item "5th HYCON2 (Taming Heterogeneity and Complexity) PhD School on Control of Networked and Large-Scale Systems and the EFFINET PhD School on Control of Drinking Water Networks  (Lucca Italy, 1 to 5 of July 2013)"
+\item 5th HYCON2 Ph.D. School on Control of Networked and Large-Scale Systems and the EFFINET Ph.D. School on Control of Drinking Water Networks  (Lucca Italy, 1-5 of July 2013)
 \item Java workshop in the 2nd Week of Computation and Systems. \textit{Morelia, Mexico (2006).}
-\item Analysis and Object Oriented Design using UML  (Morelia Mexico,  From 8 to 12 of August 2011)
+\item Analysis and Object Oriented Design using UML  (Morelia Mexico,  8-12 of August 2011)
 
 %\item Taller de Java en la 2da Semana de Sistemas y Computación (Morelia México, 2006)
-\item Week of Systems and computation in the Instituto Tecnológico de Morelia. \textit{Morelia, México (2006)}.
+%\item Week of Systems and computation in the Instituto Tecnológico de Morelia. \textit{Morelia, México (2006)}.
 %\item 2da. Semana de Sistemas y Computaci\'on en el Instituto Tecnológico de Morelia (Morelia México, 2006).	
-\item Week of Systems and computation in the Instituto Tecnológico de Morelia. \textit{Morelia, México (2005).}
+%\item Week of Systems and computation in the Instituto Tecnológico de Morelia. \textit{Morelia, México (2005).}
 \end{innerlist}
-
-
-
 \end{document}
 
 
