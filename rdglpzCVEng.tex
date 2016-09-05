@@ -3,6 +3,7 @@
 
 % This is a helpful package that puts math inside length specifications
 \usepackage{multirow}
+\usepackage{marginnote}
 \usepackage{url}
 \usepackage{calc}
 \usepackage[spanish, es-tabla]{babel}
@@ -11,6 +12,8 @@
 \usepackage{array}
 \usepackage{multicol}
 \usepackage{multirow}
+
+
 %\usepackage[latin1]{inputenc}
 
 
@@ -166,13 +169,15 @@
 \newcolumntype{P}[1]{>{\hfill\arraybackslash}p{#1}}
 
 \begin{document}
+%\marginnote{typeset text here...}
+
 \small{
-\makeheading{Dr. Rodrigo L\'{o}pez Far\'{i}as (Updated: \textit{12 / 08 / 2016} )}  
+\makeheading{Ph.D. Rodrigo L\'{o}pez Far\'{i}as \tiny{(Updated: \textit{12 / Aug / 2016} )}}  
 
 \section{Personal Information}\begin{tabular}{l P{70mm} M{20mm}}{Birthday: 8 / Jul / 1984} 		& 	e-mail: rodrigo.lopez@alumni.imtlucca.it	 						& \multirow{4}{*}[1.3cm]{\includegraphics[width=2.4cm]{foto.png}  } 	\\
-{Address: Aram\'{e}n \# 313}	&     Skype ID: rdglpz  	 	&	\\
-CP: 58070           			& 				Cellular: +52 4431555416 				&	\\
-Morelia, Mexico         		&		 												&
+{Address: Aram\'{e}n \# 313}	&    ORCID ID: 0000-0003-2772-0051	   	 	&	\\
+Postal (ZIP) Code: 58070           			& 		Skype ID: rdglpz					&	\\
+Morelia, Mexico         		&	Cellular: +52 443 155 5416  & %	Cellular: +52 443 155 5416  												&
 \end{tabular}
 
 
@@ -185,18 +190,18 @@ Matlab, MATHEMATICA, R, Java, C/C++, PHP-HTML-MySQL, Python, LISP.
 \textbf{Research} 
 
 
-Machine learning, data mining, dimensionality reduction,time series, nonlinear dynamical systems, global optimization, evolutionary computing.
+Machine learning, data mining, dimensionality reduction, time series, nonlinear dynamical systems, global optimization, evolutionary computing.
  
 \blankline
  
 \textbf{Languages} 
 
-English: 550 ITP TOEFL points. Italian: B1 Common CEFRL Level 
+English: 550 ITP TOEFL points. Italian: B1 Common CEFRL Level. 
 
 
 
 
-\section{Academic Degree} {\textbf{PhD in Computer Science and Engineering }}(W. European Doctorate mention). Lucca, Italy. (February 2012 - January 2016)
+\section{Academic Degree} {\textbf{Ph.D. in Computer Science and Engineering }}(W. European Doctorate mention). \textit{Lucca, Italy. (February 2012 - January 2016)}
 
 
 \textbf{Institute of Advanced Studies Lucca}
@@ -230,7 +235,7 @@ English: 550 ITP TOEFL points. Italian: B1 Common CEFRL Level
 \blankline
 
 
-{\textbf{Engineer in Computational Systems}}. 
+{\textbf{B.Eng. in Computational Systems}}. 
 \textit{Morelia, Mexico (2002-2007)}
 
 \textbf{Instituto Tecnologico de Morelia}
