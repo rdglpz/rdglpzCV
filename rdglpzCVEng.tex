@@ -1,6 +1,7 @@
 \documentclass[7pt]{article}
 \usepackage[utf8]{inputenc}
 
+
 % This is a helpful package that puts math inside length specifications
 \usepackage{multirow}
 \usepackage{marginnote}
@@ -170,20 +171,25 @@
 
 \begin{document}
 %\marginnote{typeset text here...}
-
+%{\fontfamily{cmss}\selectfont
 \small{
-\makeheading{Ph.D. Rodrigo L\'{o}pez Far\'{i}as \tiny{(Updated: \textit{12 / Aug / 2016} )}}  
+\makeheading{\begin{tabular}{l P{70mm}}
+Ph.D. Rodrigo L\'{o}pez Far\'{i}as         		&	\small{\textit{6 / Sept / 2016}}  				
+\end{tabular}}  
 
-\section{Personal Information}\begin{tabular}{l P{70mm} M{20mm}}{Birthday: 8 / Jul / 1984} 		& 	e-mail: rodrigo.lopez@alumni.imtlucca.it	 						& \multirow{4}{*}[1.3cm]{\includegraphics[width=2.4cm]{foto.png}  } 	\\
-{Address: Aram\'{e}n \# 313}	&    ORCID ID: 0000-0003-2772-0051	   	 	&	\\
-Postal (ZIP) Code: 58070           			& 		Skype ID: rdglpz					&	\\
-Morelia, Mexico         		&	Cellular: +52 443 155 5416  & %	Cellular: +52 443 155 5416  												&
+\section{Personal Information}
+
+\begin{tabular}{l P{70mm} M{20mm}}
+Birthday: 8 / Jul / 1984		&	e-mail: rodrigo.lopez@alumni.imtlucca.it	& \multirow{4}{*}[1.3cm]{\includegraphics[width=2.4cm]{foto.png}  } 	\\
+Address: Aram\'{e}n \# 313		&   ORCID ID: 0000-0003-2772-0051				&	\\
+Postal (ZIP) Code: 58070		& 	Skype ID: rdglpz							&	\\
+Morelia, Mexico         		&	Cellular: +52 443 155 5416  				&
 \end{tabular}
 
 
 \section{Interests \& Skills  } \textbf{Programming Languages} 
 
-Matlab, MATHEMATICA, R, Java, C/C++, PHP-HTML-MySQL, Python, LISP.
+MATLAB, MATHEMATICA, R, Java, C/C++, PHP-HTML-MySQL, Python, LISP.
 
 \blankline
 
@@ -204,12 +210,12 @@ English: 550 ITP TOEFL points. Italian: B1 Common CEFRL Level.
 \section{Academic Degree} {\textbf{Ph.D. in Computer Science and Engineering }}(W. European Doctorate mention). \textit{Lucca, Italy. (February 2012 - January 2016)}
 
 
-\textbf{Institute of Advanced Studies Lucca}
+\textbf{IMT School for Advanced Studies Lucca}
 		\begin{outerlist}
 			\item Thesis: Time Series Forecasting Based on Classification of Dynamic Patterns.
 			 \begin{innerlist}
                  \item  {Advisors: Dr. Alberto Bemporad. Dr. Pantelis Sopasakis}
-        	\item Study field: Time series analysis.
+        	\item Field of study: Time series analysis.
 	    \end{innerlist}
 		\end{outerlist}
 		
@@ -244,7 +250,7 @@ English: 550 ITP TOEFL points. Italian: B1 Common CEFRL Level.
 	
         	\item Thesis: Implementation and performance analysis of \textbf{``Linux Terminal Server Project"} for educational purposes.
 	    \begin{innerlist}
-        	\item Topic: Distributed operative Systems.
+        	\item Field of study: Application of distributed operative Systems.
 	    \end{innerlist}
 \end{outerlist}
 
@@ -368,20 +374,23 @@ Morelia, Mexico.
 
 \blankline
 
-\textbf{}
+%\textbf{}
 
-\textbf{Submitted}
+%\textbf{Submitted}
 
-\begin{innerlist}
-\item \textit{Juan J. Flores, Felix Calderon Solorio, Jose Rafael Cede\~no Gonzalez, Jose Ortiz Bejar and Rodrigo Lopez Farias}.  Comparison of Time Series Forecasting Techniques with respect to Tolerance to Noise \textit{IEEE Autumn Meeting on Power, Electronics and Computing} \textbf{Ixtapa M\'{e}xico, November 2016 } (Under Revision).
+%\begin{innerlist}
 
-\end{innerlist}
+%\end{innerlist}
 
 
-\blankline
+%\blankline
 
 \textbf{Accepted}
 \begin{innerlist}
+
+
+\item \textit{Juan J. Flores, Felix Calderon Solorio, Jose Rafael Cede\~no Gonzalez, Jose Ortiz Bejar and Rodrigo Lopez Farias}.  Comparison of Time Series Forecasting Techniques with respect to Tolerance to Noise \textit{IEEE Autumn Meeting on Power, Electronics and Computing} \textbf{Ixtapa M\'{e}xico, November 2016 }
+
 
 \item \textit{Hector Rodriguez-Rangel, Vicenc Puig, Juan J. Flores and ,  Rodrigo L\'{o}pez} Far\'{i}as.  Flow meter Data Validation and Reconstruction using Neural Networks: Application to the Barcelona Water Network \textbf{3rd International Conference on Control and Fault-Tolerant Systems, Barcelona, Spain. 2016} (To be published).
 
@@ -437,6 +446,7 @@ Morelia, Mexico.
 %\item 2da. Semana de Sistemas y Computaci\'on en el Instituto Tecnológico de Morelia (Morelia México, 2006).	
 %\item Week of Systems and computation in the Instituto Tecnológico de Morelia. \textit{Morelia, México (2005).}
 \end{innerlist}
+
 \end{document}
 
 
