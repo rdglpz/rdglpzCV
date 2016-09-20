@@ -15,9 +15,12 @@
 \usepackage{multirow}
 \usepackage{titlesec}
 \usepackage[scaled=.90]{helvet}
+\usepackage{fancyhdr}
+\usepackage[ddmmyyyy,hhmmss]{datetime}
 \titleformat{\section}
   {\normalfont\sffamily\Large\bfseries\color{cyan}}
   {\thesection}{1em}{}
+ 
 
 
 
@@ -183,17 +186,17 @@
 %{\fontfamily{cmss}\selectfont
 \small{
 \makeheading{\begin{tabular}{l P{70mm}}
-Ph.D. Rodrigo L\'{o}pez Far\'{i}as         		&	\small{\textit{12-Sept-2016}}  				
+Ph.D. Rodrigo L\'{o}pez Far\'{i}as         		&	\footnotesize{\textit{\today}  }				
 \end{tabular}}  
 
 
 
 \section{Personal Information} 
 \begin{tabular}{l P{70mm} M{20mm}}
-Birthday: 8-Jul-1984		&	e-mail: rodrigo.lopez@alumni.imtlucca.it	& \multirow{4}{*}[1.3cm]{\includegraphics[width=2.4cm]{foto.png}  } 	\\
-Address: Aram\'{e}n \# 313		&   ORCID ID: 0000-0003-2772-0051				&	\\
-Postal (ZIP) Code: 58070		& 	Skype ID: rdglpz							&	\\
-Morelia, Mexico         		&	Cellular: +52 443 155 5416  				&
+Birthday: 8-Jul-1984		&	e-mail: rodrigo.lopez@alumni.imtlucca.it	& \multirow{4}{*}[1cm]{\includegraphics[width=2.2cm]{foto.png}  } 	\\
+Address: Aram\'{e}n \# 313		&   ORCID ID: 0000-0003-2772-0051			&	\\
+Postal (ZIP) Code: 58070		& 	Cellular: +52 443 155 5416				&	\\
+Morelia, Mexico         		&	Skype ID: rdglpz  						&
 \end{tabular}
 
 
@@ -223,7 +226,9 @@ Applied Computational Intelligence Network.
  
 \textbf{Languages} 
 
-English: 550 ITP TOEFL points. Italian: B1 Common CEFRL Level. 
+English: 550 ITP TOEFL points. 
+
+Italian: B1 Common CEFRL Level. 
 
 
 \section{Academic Degree}  \textbf{Ph.D in Computer Science and Engineering}. (W. European Doctorate mention).
@@ -382,3 +387,13 @@ Participation in the young entrepreneurs program: IMPULSA.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%% End CV Document %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%% Git Instructions %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%cd /Users/rodrigolopez/rdglpzCV/rdglpzEngCV
+%git add rdglpzCVEng.tex
+%git add rdglpzCVEng.pdf
+%git commit -m "Changes"
+%git push origin master
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
