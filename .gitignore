@@ -1,0 +1,5 @@
+*.tex.swp
+*.aux
+*.log
+*.out
+*.synctex.gz
