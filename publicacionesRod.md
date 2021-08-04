@@ -35,3 +35,7 @@ _Evolving Nearest Neighbor Time Series Forecasters_. [Soft Computing](http://www
 
 [_Particle swarm optimization with gravitational interactions for multimodal and unimodal problems_](https://link.springer.com/chapter/10.1007/978-3-642-16773-7_31). Juan J. Flores, **Rodrigo Lopez** and Julio Barrera. Proceedings of the 9th Mexican International Conference on Artificial Intelligence (MICAI 2010), pages 3361-370. Springer-Verlag. Pachuca, México. Noviembre 2010. Online ISBN
 978-3-642-16773-7.
+
+
+
+##### @article{KS924, year=9, Volume=2, Journal="Komputer Sapiens", howpublished = {http://komputersapiens.smia.mx/publicaciones.php#KSIX-II}, note = {Mayo-agosto 2017}, Title="Sistema de Medición de flujos de agua tolerante a fallos en redes de distribución de agua potable utilizando inteligencia artificial", Author="Héctor Rodríguez Rangel, Rodrigo López Farías, Giovanni Manjarez Montelongo, Luis AMorales Rosales y Gloria Ekaterine Peralta Peñúñuri"}
