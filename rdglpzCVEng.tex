@@ -1,7 +1,8 @@
-\documentclass[10pt]{article}
+\documentclass[7pt]{article}
 
 
 % This is a helpful package that puts math inside length specifications
+
 \usepackage{multirow}
 \usepackage{wasysym}
 \usepackage{marginnote}
@@ -18,6 +19,9 @@
 \usepackage[scaled=.90]{helvet}
 \usepackage{fancyhdr}
 \usepackage{markdown}
+\usepackage{fontspec}
+\defaultfontfeatures{Mapping=tex-text}
+\setmainfont{Verdana}
 \usepackage[ddmmyyyy,hhmmss]{datetime}
 \titleformat{\section}
   {\normalfont\sffamily\Large\bfseries\color{cyan}}
@@ -180,7 +184,7 @@
 %\marginnote{typeset text here...}
 %{\fontfamily{cmss}\selectfont
 
-\makeheading{\begin{tabular}{l P{40mm}}
+\makeheading{\begin{tabular}{l P{30mm}}
   &  \textit{\footnotesize{Updated:}}   \\
 Rodrigo Lopez-Farias, Ph.D. \footnotesize{\textit{Computer Science and Engineering}  } & \footnotesize{\textit{\today}}
 \end{tabular}
@@ -189,12 +193,12 @@ Rodrigo Lopez-Farias, Ph.D. \footnotesize{\textit{Computer Science and Engineeri
 
 
 
-\section{{Personal Information}}
+\section{Personal Information}
 
-\begin{tabular}{l P{55mm} M{10mm}}
-Birthday: 8/Jul/1984		&	e-mail:  rdglpz@gmail.com	& 
-\multirow{2}{*}[0.3cm]{\includegraphics[width=2.0cm]{images/foto2017.png}  } 	\\
-Residence: Corregidora, Queretaro  	&  Cellphone: +52 443 155 5416	 		&	\\
+\begin{tabular}{l P{45mm} M{10mm}}
+Birthday: 8/Jul/1984		&	rdglpz@gmail.com	& 
+\multirow{2}{*}[0.2cm]{\includegraphics[width=2.0cm]{images/foto2017.png}  } 	\\
+Residence: Corregidora, Queretaro  	&  phone: +52 4431555416	 		&	\\
 		& 	Skype ID: rdglpz  			&	\\
 %\\       		&	ORCID ID: 0000-0003-2772-0051						&
 & & \\
@@ -204,10 +208,10 @@ Residence: Corregidora, Queretaro  	&  Cellphone: +52 443 155 5416	 		&	\\
 \blankline
 
 \section{Current Job}
-Research fellow for the National Council on Science and Technology (CONACyT) commissioned at the Center for Research of Geospatial Information Sciences (CentroGeo) in the Geocomputational Intelligence area (Since Nov 2017).
+Research fellow for the National Council on Science and Technology (CONACyT) commissioned at the Center for Research of Geospatial Information Sciences (CentroGeo) in the Geocomputational Intelligence department (Since Nov 2017).
 
 \section{Grants and Distinctions}
-Member of the Mexican System of Researchers (SNI) in Candidate Category.
+Member of the Mexican System of Researchers (SNI - 1).
 %Agentes conversacionales inteligentes manejando gran volumen de información (Big Data).
 
 \blankline
@@ -220,7 +224,7 @@ Python, R, Matlab, Mathematica, Java, C/C++, PHP-HTML-MySQL(SQL), CassandraDB (N
 
 \textbf{Research}
    
-Novel time and spatio-temporal series modelling and prediction techniques using machine learning (Artificial Neural Networks, Nearest Neighbors, Support Vector Machines) applied to  predict pollutants in the cities (PM2.5, light pollution), urban land change prediction,  wind speed in sustainable energy generation, and water demand. Multi-Model Prediction with probabilistic model selection. Global and non-convex numerical optimization applied to System Identification in Biology Systems. 
+Interest in producing novel time and spatio-temporal series modelling and prediction techniques using machine learning (Artificial Neural Networks, Nearest Neighbors, Support Vector Machines) applied to  predict pollutants in the cities (PM2.5, light pollution), urban land change prediction,  wind speed in sustainable energy generation, and water demand. Multi-Model Prediction with probabilistic model selection. Global and non-convex numerical optimization applied to System Identification in Biology Systems. 
  
 \blankline
 
@@ -325,8 +329,8 @@ Italian: B1 Common CEFRL Level.
 \blankline
 
 \begin{innerlist}
-\item  MSc. Thesis defense committee member of Josué González Parra.  
-Title: A First Study on Time Series Empirical Probability Distributions using Generative Artificial Neural Networks. 
+\item  Member of the MSc. thesis defense committee of Josué González Parra.  
+Thesis Title: A First Study on Time Series Empirical Probability Distributions using Generative Artificial Neural Networks. 
 \end{innerlist}
 
 \blankline
@@ -394,7 +398,7 @@ Ex-boss contact: Mtra. Elvia Lucina G. Arce Avila. + 52 (443) 322 3542, + 52 (44
 \blankline
 
 %\subsection{Participation in Research Projects}
-\textbf{Center for Information and Communications Technologies (CETIC)}. \textit{(Mar/2007 - Jun/2007)}.
+\textbf{Center for Information and Communications Technologies (CETIC)}. \textit{(Mar}\textit{/2007} - \textit{Jun/2007)}.
 Morelia, Mexico.
 
 \textbf{Department:}Infrastructure department.
@@ -417,7 +421,7 @@ Morelia, Mexico.
 
 %\blankline
 
-\section{Publications} \textbf{Articles in Journals included in Journal Citation Reports}
+\section{Publications} \textbf{Articles Published in Journal Citation Reports Journals}
 
 \blankline
 
@@ -426,14 +430,14 @@ Morelia, Mexico.
 
 %\subsection{Journal Articles Sent}
 \begin{innerlist}
-\item [[Hernandes-Paniagua et al., 2021]] \textbf{Application of network theory to study spatio-temporal evolution in
+\item [[Hernandez-Paniagua et al., 2021]] \textbf{Application of network theory to study spatio-temporal evolution in
 the weekend effect in urban areas} \textit{Iván Y. Hernández-Paniagua, Rodrigo López Farías, Juan A. Pichardo Corpus}. Atmósfera. (\url{https://doi.org/10.20937/ATM.52993}), (Feb/2021).
 
 \item [[Pichardo-Corpus et al., 2020]]\textbf{Spatio-temporal Networks of light pollution} \textit{{Pichardo Corpus, Juan. A. and Solano-Lamphar, Hector and Lopez-Farias, Rodrigo, Delgadillo-Ruiz, Olivia}}. {Journal of Quantitative Spectroscopy and Radiative Transfer}. (\url{https://doi.org/10.1016/j.jqsrt.2020.107068}), ({June/2020}).
 
 \item [[Flores et al., 2019]] \textbf{Soft Computing Methods with Phase Space Reconstruction for Wind Speed Forecasting—A Performance Comparison} \textit{{Flores, Juan. J. and Cedeño González, José R. and Rodríguez, Héctor and Graff, Mario and Lopez-Farias, Rodrigo and Calderon, Felix}}. {Energies}. (\url{https://doi.org/10.3390/en12183545}), {Sept/2019}.
 
-\item [[Hernandez Paniagua et al., 2018]] \textbf{Increasing weekend effect in ground-level O3 in metropolitan areas of Mexico} \textit{Iván Y. Hernández-Paniagua, Rodrigo Lopez-Farias, Jose J. Piña, Luis G. Ruíz-Suárez, Juan A. Pichardo-Corpus, Olivia Delgadillo, Agustín García-Reynoso, Arnoldo Flores-Torres, Alberto Mendoza}. {Sustainability}. (\url{https://doi.org/10.3390/su10093330}). ({Aug/2018}).
+\item [[Hernandez Paniagua et al., 2018]] \textbf{Increasing weekend effect in ground-level $O_3$ in metropolitan areas of Mexico} \textit{Iván Y. Hernández-Paniagua, Rodrigo Lopez-Farias, Jose J. Piña, Luis G. Ruíz-Suárez, Juan A. Pichardo-Corpus, Olivia Delgadillo, Agustín García-Reynoso, Arnoldo Flores-Torres, Alberto Mendoza}. {Sustainability}. (\url{https://doi.org/10.3390/su10093330}). (Aug / 2018).
 
 \item [[Lopez-Farias et al., 2018]]\textbf{Multi-Model Prediction for Demand Forecast in
 Water Distribution Networks} \textit{Rodrigo López Farías, Vicenc Puig, Héctor Rodriguez Rangel, Juan J. Flores} {Energies}. (\url{https://doi.org/10.3390/en11030660}). ({Mar/2018}).
@@ -452,7 +456,7 @@ Water Distribution Networks} \textit{Rodrigo López Farías, Vicenc Puig, Hécto
 
 \blankline
 
-\item [[Guerrero-Hernandez et al. 2020]] \textbf{Sarco-Endoplasmic Reticulum Calcium Release Model Based on Changes in the Luminal Calcium Content} \textit{Agustín Guerrero-Hernández, Víctor Hugo Sánchez-Vázquez,
+\item [[Guerrero-Hernandez et al., 2020]] \textbf{Sarco-Endoplasmic Reticulum Calcium Release Model Based on Changes in the Luminal Calcium Content} \textit{Agustín Guerrero-Hernández, Víctor Hugo Sánchez-Vázquez,
 Ericka Martínez-Martínez, Lizeth Sandoval-Vázquez, Norma C. Perez-Rosas, Rodrigo Lopez-Farias, and Adan Dagnino-Acosta.} {Calcium Signaling},  (\url{https://link.springer.com/chapter/10.1007\%2F978-3-030-12457-1_14}), (2020)
 
 
@@ -470,7 +474,7 @@ Ericka Martínez-Martínez, Lizeth Sandoval-Vázquez, Norma C. Perez-Rosas, Rodr
 \begin{innerlist}
 
 
-\item [[Rodriguez-Rangel 2017]] \textbf{Sistema de Medición de Flujos de Agua Tolerante a Fallos en Redes de Distribución de Agua Potable Utilizando Inteligencia Artificial}, \textit{H. Rodríguez Rangel, R. López Farías, G. Manjarrez Montelongo}, L. A. Morales Rosales y G. E. Peralta Peñuñuri. Komputer Sapiens, KS año 9 vol. 2, KS92, 2017, (Latin index) (\url{http://smia.mx/komputersapiens/publicaciones.php}).
+\item [[Rodriguez-Rangel et al., 2017]] \textbf{Sistema de Medición de Flujos de Agua Tolerante a Fallos en Redes de Distribución de Agua Potable Utilizando Inteligencia Artificial}, \textit{H. Rodríguez Rangel, R. López Farías, G. Manjarrez Montelongo}, L. A. Morales Rosales y G. E. Peralta Peñuñuri. Komputer Sapiens, KS año 9 vol. 2, KS92, 2017, (Latin index) (\url{http://smia.mx/komputersapiens/publicaciones.php}).
 
 \end{innerlist}
 
@@ -485,8 +489,19 @@ Ericka Martínez-Martínez, Lizeth Sandoval-Vázquez, Norma C. Perez-Rosas, Rodr
 
 \input{articulos_conferencia.tex}
 
+\section{Participation as organizer in Academic Events}
 
-\blankline
+\textbf{Recent important academic events}
+
+\begin{innerlist}
+
+
+
+\item Coordinator of the track `` Urban Sustainability and Environment'' in Metropolitan Perspectives. \textbf{Queretaro, Feb/2019. }
+\item Coordinator of the track ``Scientific Computing Applied to Geospatial Problems'' in the 2021 ``Computational National Meeting, ENC''.  \textbf{Morelia,}  \textbf{Aug/2021}.
+
+\end{innerlist}
+
 \end{document}
 
 
